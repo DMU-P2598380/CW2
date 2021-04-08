@@ -5,7 +5,8 @@
   text-decoration: none;
 }
 body{
-  background-color:white;
+  background: rgb(252,200,255);
+  background: radial-gradient(circle, rgba(252,200,255,1) 33%, rgba(255,255,255,1) 83%);
 }
 .title {
   width: 100%;
@@ -35,13 +36,22 @@ h1 {
   font-size: 40px;
   padding: 20px 300px;
 }
+
 h3 {
     display:inline-block;
     float: left;
     text-align: center;
     padding: 20px 0px;
 }
-
+h4 {
+  float: left;
+  display: block;
+  color: rgba(43, 43, 41, 0.9);
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 450px;
+}
 ul {
 
 }
@@ -106,4 +116,64 @@ background-position: center;
 background-position: center;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
+}
+.photo {
+  float: right;
+  margin: 10px;
+  width: 15%;
+  height: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 425px) {
+  .content {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  hero. {
+    background-color: white;
+    color: purple;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero content {
+    text-align: center;
+    width: 100%;
+  }
+  .hero h2 {
+    margin: 0 0 20px;
+    line-height: 1;
+    color: black;
+    font-size: 100px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .hero h3  {
+    display: inline-block;
+    line-height: 1;
+    color: black;
+    font-size: 100px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .hero h2 {
+    background-image: url(images/homephoto.jpg);
+    background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  }
+  .hero h3 {
+    display: inline-block;
+    background-image: url(images/homephoto.jpg);
+    background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  }
 }
